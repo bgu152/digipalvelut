@@ -1,0 +1,80 @@
+body{
+    /* background-color: lightblue; */
+    /* background-image: url("./images/boat1_large.png" ); */
+    
+    
+}
+.container{
+    margin: auto;
+    width: 960px;
+}
+header {
+    display: flex;
+    height: 180px;
+    background-image: linear-gradient(#afafaf,white);
+
+}
+
+
+header h1{
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+
+
+main{
+    background-image: url('./images/boatfast960_desat.jpg');
+    background-repeat: no-repeat;
+    height: 660px;
+   
+}
+
+footer{
+    background-color: #e4e4e4;
+    height: 200px;
+}
+
+.logo{
+    padding: 40px 40px;
+    height: 10rem;
+}
+
+body{
+    height: 200px;    
+}
+
+nav{
+    margin-top: 30px;
+    background-image: url("./images/boat1_banner.png" ) ;
+    background-repeat: no-repeat;
+    background-size: 960px;
+    padding: 60px;    
+    height: 100px;
+    width: 960px;
+    display: flex;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration: none;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: x-large;
+}
+
+main div a{
+    padding:1rem;
+    text-align:center;
+    text-decoration: none;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 40px ;
+    background-color: rgba(82, 112, 194, 0.116);
+    color:white;
+    
+    border-style: solid;
+    border-width: 1px;
+}
+main div{
+    padding:100px 100px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CoverPicker</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        function HelloName() {
+            const [image, setImage] = React.useState('./images/pickerBase.png');
+            const displayImage = (event) => {
+                setImage(event.target.value);
+                
+            }
+
+            return (
+                
+                <div>
+                    <div>
+                        <select onChange={displayImage}>
+                            <option value ='./images/pickerBase.png' >Valise ajokuomu</option>
+                            <option value='./images/picker_pressu1.png'>Sininen</option>
+                            <option value='./images/picker_pressu1_red.png'>Punainen</option>
+
+
+                        </select>
+                    </div>
+                    <img src={image}/>
+                </div>
+            )
+        }
+        ReactDOM.render(<HelloName />, document.getElementById("app"));
+    </script>
+
+</body>
+
+</html>
